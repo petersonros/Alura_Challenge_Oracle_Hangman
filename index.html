@@ -11,49 +11,81 @@
     <title>Jogo da Forca</title>
 </head>
 <body>
-<!-- 
-    <div> forca </div>
 
-    <div> palavra secreta </div>
+    <header>
+        <h1>Jogo da Forca</h1>
+        <h3>Challenge Oracle One</h3>
+    </header>
 
-    <div> dica para a plavra secreta </div>
+    <section class="container">
 
-    <div> inseriar uma palavra </div>
- -->
-    <div class="dkeys">
-        <div data-key="keyq" class="key">Q</div>
-        <div data-key="keyw" class="key">W</div>
-        <div data-key="keye" class="key">E</div>
-        <div data-key="keye" class="key">R</div>
-        <div data-key="keyq" class="key">T</div>
-        <div data-key="keyw" class="key">Y</div>
-        <div data-key="keye" class="key">U</div>
-        <div data-key="keyq" class="key">I</div>
-        <div data-key="keyw" class="key">O</div>
-        <div data-key="keye" class="key">P</div>
-    </div>
-    <div class="dkeys">
-        <div data-key="keya" class="key">A</div>
-        <div data-key="keys" class="key">S</div>
-        <div data-key="keyd" class="key">D</div>
-        <div data-key="keye" class="key">F</div>
-        <div data-key="keyq" class="key">G</div>
-        <div data-key="keyw" class="key">H</div>
-        <div data-key="keye" class="key">J</div>
-        <div data-key="keyq" class="key">K</div>
-        <div data-key="keyw" class="key">L</div>
-        <div data-key="keye" class="key">Ç</div>
-    </div>
-    <div class="dkeys">
-        <div data-key="keyz" class="key">Z</div>
-        <div data-key="keyx" class="key">X</div>
-        <div data-key="keyc" class="key">C</div>
-        <div data-key="keyz" class="key">V</div>
-        <div data-key="keyx" class="key">B</div>
-        <div data-key="keyc" class="key">N</div>
-        <div data-key="keyc" class="key">M</div>
-    </div>
-    
+        <!-- fim do jogo / resultado -->
+        <div class="">
+            <div class="win"> Parabéns, você venceu! </div>
+            <!-- <div class="lose"> Não foi nessa, mais sorte na próxima! </div> -->
+        </div>
+
+        <!-- desenho da forca -->
+        <div>
+            <canvas id="tela" width="520" height="350"></canvas>
+        </div>
+
+        <div id="palavra-secreta"> <!-- palavra secreta --> </div>
+
+        <div id="categoria"> <!-- palavra dica --> </div>
+
+        <div class="dbtn">
+            <div class="btn"> Novo Jogo </div>
+            <div class="btn"> Nova Palavra </div>
+            <input type="text" placeholder="digite aqui..." class="input">
+        </div>
+
+        <div class="key-b">
+            <div data-key="keyq" class="key">Q</div>
+            <div data-key="keyw" class="key">W</div>
+            <div data-key="keye" class="key">E</div>
+            <div data-key="keye" class="key">R</div>
+            <div data-key="keyq" class="key">T</div>
+            <div data-key="keyw" class="key">Y</div>
+            <div data-key="keye" class="key">U</div>
+            <div data-key="keyq" class="key">I</div>
+            <div data-key="keyw" class="key">O</div>
+            <div data-key="keye" class="key">P</div>
+        </div>
+
+        <div class="key-b">
+            <div data-key="keya" class="key">A</div>
+            <div data-key="keys" class="key">S</div>
+            <div data-key="keyd" class="key">D</div>
+            <div data-key="keye" class="key">F</div>
+            <div data-key="keyq" class="key">G</div>
+            <div data-key="keyw" class="key">H</div>
+            <div data-key="keye" class="key">J</div>
+            <div data-key="keyq" class="key">K</div>
+            <div data-key="keyw" class="key">L</div>
+            <div data-key="keye" class="key">Ç</div>
+        </div>
+
+        <div class="key-b">
+            <div data-key="keyz" class="key">Z</div>
+            <div data-key="keyx" class="key">X</div>
+            <div data-key="keyc" class="key">C</div>
+            <div data-key="keyz" class="key">V</div>
+            <div data-key="keyx" class="key">B</div>
+            <div data-key="keyc" class="key">N</div>
+            <div data-key="keyc" class="key">M</div>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>Peterson 2022</p>
+        <!-- 
+        <p>https://github.com/petersonros</p>
+        <p>https://www.linkedin.com/in/peterson-roberto/</p>
+         -->
+    </footer>
+
     <script src="assets/script.js"></script>
 </body>
 </html>
