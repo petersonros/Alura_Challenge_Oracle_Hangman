@@ -46,7 +46,7 @@ h3 {
     border-radius: 9px;
 }
 
-#palavra-secreta {
+#palavra {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -65,7 +65,7 @@ h3 {
     margin-right: 2px;
 }
 
-#categoria {
+#dica {
     margin: 30px;
     color: whitesmoke;
     font-size: 1.2em;
