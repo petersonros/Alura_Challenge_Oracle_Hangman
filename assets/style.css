@@ -139,6 +139,7 @@ h3 {
     align-items: center;
     font-size: 17px;
     padding: 10px 15px;
+    box-shadow: 0px 0px 2px 1px white;
 }
 
 .key-b {

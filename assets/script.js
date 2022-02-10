@@ -1,3 +1,5 @@
+let tentativas = 6;
+
 let listaDinamica = [];
 let palavraDica;
 let palavraSorteada;
@@ -31,12 +33,9 @@ const palavras = [
 
 criarPalavra()
 function criarPalavra(){
-
     const indexPalavra = parseInt(Math.random(0) * palavras.length)
-
     palavraSorteada = palavras[indexPalavra].palavra;
     palavraDica = palavras[indexPalavra].dica;
-
 }
 
 mostrarPalavra();
@@ -55,5 +54,45 @@ function mostrarPalavra(){
         else{
             naTela.innerHTML = naTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
         }
+    }
+}
+
+function verificaLetraEscolhida(letra){
+    if(tentativas > 0){
+        mudarStyleLetra("idkey-" + letra);
+        comparaListas(letra);
+        mostrarPalavra();
+    }
+    console.log(letra);
+}
+
+function mudarStyleLetra(idkey){
+    document.getElementById(idkey).style.background = "#000000";
+    document.getElementById(idkey).style.color = "#FFFFFF";
+}
+
+function comparaListas(letra){
+    const pos = palavraSorteada.indexOf(letra)
+    if(pos < 0){
+        tentativas--
+        // mostrar imagem
+        // vererificar se ainda tem tentativas // mensagem
+    }
+    else{
+        for(i = 0; i < palavraSorteada.length; i++){
+            if(palavraSorteada[i] == letra){
+                listaDinamica[i] = letra;
+            }
+        }
+    }
+
+    let vitoria = true;
+    for(i = 0; i < palavraSorteada.length; i++){
+        vitoria = false;
+    }
+
+    if(vitoria == true){
+        // mensagem na tela
+        tentativas = 0;
     }
 }
