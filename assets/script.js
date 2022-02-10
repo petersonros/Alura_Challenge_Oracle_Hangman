@@ -58,6 +58,7 @@ function mostrarPalavra(){
 }
 
 function verificaLetraEscolhida(letra){
+    document.getElementById("idkey-" + letra).disabled = true;
     if(tentativas > 0){
         mudarStyleLetra("idkey-" + letra);
         comparaListas(letra);
@@ -67,7 +68,7 @@ function verificaLetraEscolhida(letra){
 }
 
 function mudarStyleLetra(idkey){
-    document.getElementById(idkey).style.background = "#000000";
+    document.getElementById(idkey).style.background = "#151515";
     document.getElementById(idkey).style.color = "#FFFFFF";
 }
 
