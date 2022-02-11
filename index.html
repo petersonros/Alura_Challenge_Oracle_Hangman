@@ -27,33 +27,7 @@
 
         <!-- desenho da forca -->
         <div>
-            <!-- <canvas id="tela" width="520" height="350"></canvas> -->
-            <svg class="tela" width="320" height="360" viewBox="0 0 320 360">
-                <rect fill="#ffffff" width="002" x="003" height="358" y="000"/><!-- esquerda -->
-                <rect fill="#000000" width="360" x="000" height="002" y="000"/><!-- topo -->
-                <rect fill="#f0f0f0" width="060" x="298" height="002" y="002"/><!-- direita -->
-                <rect fill="#ffffff" width="202" x="350" height="358" y="300"/><!-- base -->
-                <!-- linha da base -->
-                <rect fill="#ffd700" width="140" x="000" height="002" y="356" rx="3"/>
-                <!-- linha de cima -->
-                <rect               width="180" height="3"      fill="#ffd700" rx="2"    x="80"/>
-                <!-- linha poste -->
-                <rect               width="3"     height="330"    fill="#ffd700" rx="2"    x="70"/>
-                <!-- linha da corda -->
-                <rect               width="3"     height="50"     fill="#ffd700" rx="2"    x="257"/>
-                <!-- cabeça -->
-                <circle cx="260" cy="78" r="30" fill="#ffd700"/>
-                <!-- braço direito -->
-                <rect class="forca" width="2"     height="72"     fill="#ffd700" rx="2"    transform="matrix(-0.9 0.5 0.5 0.9 259 115)"/>
-                <!-- braço esquerdo -->
-                <rect class="forca" width="2"     height="72"     fill="#ffd700" rx="2"    x="259" y="115"  transform="rotate(30 259 115)"/>
-                <!-- tronco -->
-                <rect class="forca" width="4"     height="110"    fill="#ffd700"  rx="2"     x="257" y="108"/>
-                <!-- perna esquerda -->
-                <rect class="forca" width="3"     height="72"     fill="#ffd700" rx="2"    x="259" y="215"  transform="rotate(30 259 215)"/>
-                <!-- perna direirta transform="matrix(-0.9 0.5 0.5 0.9 259 215)"/> -->
-                <rect class="forca" width="3"     height="72"     fill="#ffd700" rx="2"   transform="matrix(-0.9 0.5 0.5 0.9 259 215)"/>
-            </svg>
+            <canvas id="tela" width="520" height="350"></canvas>
         </div>
 
         <div id="palavra"> <!-- palavra secreta --> </div>
@@ -113,5 +87,6 @@
     </footer>
 
     <script src="assets/script.js"></script>
+    <script src="assets/canvas.js"></script>
 </body>
 </html>
