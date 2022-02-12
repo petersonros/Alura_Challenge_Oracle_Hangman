@@ -77,7 +77,7 @@ h3 {
     height: 40px;
 }
 
-.win {
+#result {
     color: #ffd700;
     display: flex;
     justify-content: center;
@@ -108,12 +108,12 @@ h3 {
 
 .dbtn {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     gap: 3px;
     padding-bottom: 15px;
 }
 
-.btn {
+#btnNovoJogo {
     margin: 3px;
     width: 160px;
     height: 33px;
@@ -168,17 +168,19 @@ h3 {
     border: 2px solid #ffd700;
     color: gold;
     box-shadow: 0px 0px 2px 1px white;
+    cursor: pointer;
 }
 
 .key:disabled{
     cursor: not-allowed;
 }
 
-.btn:hover {
+#btnNovoJogo:hover {
     transform: scale(1.1);
     border: 2px solid gold;
     color: gold;
     box-shadow: 0px 0px 2px 1px white;
+    cursor: pointer;
 }
 
 footer {

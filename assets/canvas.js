@@ -98,3 +98,4 @@ function rightLeg(){
     linha.lineTo(364, 245);
     linha.fill();
 }
+
