@@ -9,14 +9,6 @@ linha.fill();
 /* desenha forca */
 forca();
 
-/* desenha boneco */
-head();
-body();
-leftArm();
-rightArm();
-leftLeg();
-rightLeg();
-
 /* forca */
 function forca(){
     linha.fillStyle = "#FFFFFF";
@@ -98,4 +90,3 @@ function rightLeg(){
     linha.lineTo(364, 245);
     linha.fill();
 }
-

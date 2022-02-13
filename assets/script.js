@@ -1,5 +1,4 @@
 let tentativas = 6;
-
 let listaDinamica = [];
 let palavraDica;
 let palavraSorteada;
@@ -28,18 +27,20 @@ function mostrarPalavra(){
             naTela.innerHTML = naTela.innerHTML + "<div class='letras'>" + listaDinamica[i] + "</div>"
         }
     }
+    console.log(palavraSorteada);
+
 }
 
 function verificaLetra(letra){
     document.getElementById("idkey-" + letra).disabled = true;
     if(tentativas > 0){
-        mudarStyleLetra("idkey-" + letra);
+        mudaCorBotao("idkey-" + letra);
         comparaListas(letra);
         mostrarPalavra();
     }
 }
 
-function mudarStyleLetra(idkey){
+function mudaCorBotao(idkey){
     document.getElementById(idkey).style.background = "#151515";
     document.getElementById(idkey).style.color = "#FFFFFF";
 }
@@ -48,10 +49,9 @@ function comparaListas(letra){
     const pos = palavraSorteada.indexOf(letra)
     if(pos < 0){
         tentativas--
-        montaBoneco();// mostrar imagem
-        // vererificar se ainda tem tentativas // mensagem
+        montaBoneco();
         if(tentativas == 0){
-            document.querySelector().innerHTML
+            document.querySelector("#result").innerHTML = ("Não foi dessa vez! A palavra era " + palavraSorteada);
         }
     }
     else{
@@ -70,8 +70,8 @@ function comparaListas(letra){
     }
 
     if(vitoria == true){
-        // mensagem na tela
-        mostraMenssagem();
+        // mensagem de vitoria na tela
+        document.getElementById("result").innerHTML = ("Parabéns, você venceu!");
         tentativas = 0;
     }
 }
@@ -79,36 +79,24 @@ function comparaListas(letra){
 function montaBoneco(){
     switch(tentativas){
         case 5:
-            document.getElementById("tela").innerHTML.head();
+            head();
             break;
         case 4:
-            document.getElementById("imagem").innerHTML.body();
+            body();
             break;
         case 3:
-            document.getElementById("imagem").innerHTML.leftArm();
+            leftArm();
             break;
         case 2:
-            document.getElementById("imagem").innerHTML.rightArm();
+            rightArm();
             break;
         case 1:
-            document.getElementById("imagem").innerHTML.leftLeg();
+            leftLeg();
             break;
         case 0:
-            document.getElementById("imagem").innerHTML.rightLeg();
+            rightLeg();
             break;
     }
-}
-
-function mostraMenssagem(titulo, mensagem){
-    let vitoriaNaTela = document.getElementById("result", "parabéns, você venceu!");
-    vitoriaNaTela.innerText = titulo;
-
-    let modalBody = document.getElementById("result");
-    modalBody.innerHTML = mensagem;
-
-/*     $("#myModal").modal({
-        show: true
-    }); */
 }
 
 let bntNovoJogo = document.querySelector("#btnNovoJogo")
