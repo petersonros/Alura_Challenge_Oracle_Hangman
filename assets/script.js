@@ -41,7 +41,7 @@ function verificaLetra(letra){
 }
 
 function mudaCorBotao(idkey){
-    document.getElementById(idkey).style.background = "#151515";
+    document.getElementById(idkey).style.background = "#87CEFA";
     document.getElementById(idkey).style.color = "#FFFFFF";
 }
 
@@ -70,7 +70,6 @@ function comparaListas(letra){
     }
 
     if(vitoria == true){
-        // mensagem de vitoria na tela
         document.getElementById("result").innerHTML = ("Parabéns, você venceu!");
         tentativas = 0;
     }
