@@ -1,0 +1,165 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body, header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: darkslategray;
+}
+
+header {
+    width: 100vw;
+    padding: 15px;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: lightblue;
+    font-size: 16px;
+}
+
+.message {
+    margin-top: 30px;
+    color: aliceblue;
+    font-size: 16px;
+}
+
+#tela {
+    margin-top: 25px;
+    border: 2px solid coral;
+    border-radius: 9px;
+    box-shadow: 0px 0px 5px 1px lightblue;
+}
+
+.letras {
+    width: 16px; 
+    text-align: center;
+    border-bottom: 2px solid aliceblue;
+    color: aliceblue;
+    padding: 2px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.word {
+    display: flex;
+    flex-direction: row;
+    color: aliceblue;
+    margin-top: 25px;
+    font-size: 16px;
+}
+
+.btn {
+    margin: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 140px;
+    height: 33px;
+    border-radius: 9px;
+    border: 1px solid coral;
+    color: coral;
+    box-shadow: 0px 0px 5px 1px lightblue;
+    font-size: 16px;
+}
+
+.btn:hover {
+    transform: scale(1.1);
+    border: 2px solid coral;
+    box-shadow: 0px 0px 5px 1px aliceblue;
+    cursor: pointer;
+}
+
+.keyboard {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    gap: 3px;
+}
+
+.key {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 7px;
+    margin: 3px;
+    border: 1px solid coral;
+    color: coral;
+    box-shadow: 0px 0px 2px 1px lightblue;
+    font-size: 16px;
+}
+
+.key:hover {
+    transform: scale(1.1);
+    border: 2px solid coral;
+    box-shadow: 0px 0px 5px 1px aliceblue;
+    cursor: pointer;
+}
+/* 
+@media (min-width: 321px){
+    .key btn{
+        width: 25px;
+        height: 25px;
+    }
+    #categoria{
+        font-size: 1.3em;
+    }
+}
+
+@media (min-width: 376px){
+    .teclas button{
+        width: 30px;
+        height: 30px;
+    }
+    #palavra-secreta{
+        font-size: 1.3em;
+    }
+    .letras{
+        width: 18px;
+    }
+
+    #categoria{
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 426px){
+    .teclas button{
+        width: 36px;
+        height: 36px;
+    }
+    #palavra-secreta{
+        font-size: 1.5em;
+    }
+    .letras{
+        width: 20px;
+    }
+
+    #categoria{
+        font-size: 1.6em;
+    }
+}
+
+@media (min-width: 769px){
+    .teclas button{
+        width: 68px;
+        height: 68px;
+        font-size: 2em;
+    }
+    #palavra-secreta{
+        font-size: 2.5em;
+    }
+    .letras{
+        width: 35px;
+    }
+
+    #categoria{
+        font-size: 2em;
+    }
+} */

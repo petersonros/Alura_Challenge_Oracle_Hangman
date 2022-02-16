@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Challenge Oracle One - Jogo da forca">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Oracle One">
+    <meta name="author" content="Peterson R.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/querty.css">
+    <title>Jogo da Forca</title>
+</head>
+<body>
+    <!-- cabeçalho -->
+    <header>
+        <h2>Jogo da Forca</h2>
+        <p style="color: coral;">Challenge Oracle ONE</p>
+    </header>
+
+    <!-- canvas -->
+    <div>
+        <canvas id="tela" width="510" height="360"></canvas>
+    </div>
+    
+    <!-- mensagens -->
+    <div class="message" id="result">Boa sorte!</div>
+
+    <!-- palavra -->
+    <div class="word" id="palavra"></div>
+
+    <!-- dica -->
+    <div class="word" id="dica"></div>
+
+    <!-- botões e campos de entrada -->
+    <div class="btn" id="btnNovoJogo"> Novo Jogo </div>
+
+    <!-- teclado -->
+
+    <div class="keyboard">
+        <div id="idkey-A" onclick="verificaLetra('A')" data-key="keya" class="key">A</div>
+        <div id="idkey-B" onclick="verificaLetra('B')" data-key="keyb" class="key">B</div>
+        <div id="idkey-C" onclick="verificaLetra('C')" data-key="keyc" class="key">C</div>
+        <div id="idkey-D" onclick="verificaLetra('D')" data-key="keyd" class="key">D</div>
+        <div id="idkey-E" onclick="verificaLetra('E')" data-key="keye" class="key">E</div>
+        <div id="idkey-F" onclick="verificaLetra('F')" data-key="keyf" class="key">F</div>
+        <div id="idkey-G" onclick="verificaLetra('G')" data-key="keyg" class="key">G</div>
+        <div id="idkey-H" onclick="verificaLetra('H')" data-key="keyh" class="key">H</div>
+        <div id="idkey-I" onclick="verificaLetra('I')" data-key="keyi" class="key">I</div>
+        <div id="idkey-J" onclick="verificaLetra('J')" data-key="keyj" class="key">J</div>
+        <div id="idkey-K" onclick="verificaLetra('K')" data-key="keyk" class="key">K</div>
+        <div id="idkey-L" onclick="verificaLetra('L')" data-key="keyl" class="key">L</div>
+        <div id="idkey-M" onclick="verificaLetra('M')" data-key="keym" class="key">M</div>
+        <div id="idkey-N" onclick="verificaLetra('N')" data-key="keyn" class="key">N</div>
+        <div id="idkey-O" onclick="verificaLetra('O')" data-key="keyo" class="key">O</div>
+        <div id="idkey-P" onclick="verificaLetra('P')" data-key="keyp" class="key">P</div>
+        <div id="idkey-Q" onclick="verificaLetra('Q')" data-key="keyq" class="key">Q</div>
+        <div id="idkey-R" onclick="verificaLetra('R')" data-key="keyr" class="key">R</div>
+        <div id="idkey-S" onclick="verificaLetra('S')" data-key="keys" class="key">S</div>
+        <div id="idkey-T" onclick="verificaLetra('T')" data-key="keyt" class="key">T</div>
+        <div id="idkey-U" onclick="verificaLetra('U')" data-key="keyu" class="key">U</div>
+        <div id="idkey-V" onclick="verificaLetra('V')" data-key="keyv" class="key">V</div>
+        <div id="idkey-W" onclick="verificaLetra('W')" data-key="keyw" class="key">W</div>
+        <div id="idkey-X" onclick="verificaLetra('X')" data-key="keyx" class="key">X</div>
+        <div id="idkey-Y" onclick="verificaLetra('Y')" data-key="keyy" class="key">Y</div>
+        <div id="idkey-Z" onclick="verificaLetra('Z')" data-key="keyz" class="key">Z</div>
+        <div id="idkey-Ç" onclick="verificaLetra('Ç')" data-key="keyç" class="key">Ç</div>
+    </div>
+
+    <!-- rodapé -->
+    <footer></footer>
+
+    <script src="assets/palavras.js"></script>
+    <script src="assets/script.js"></script>
+    <script src="assets/canvas.js"></script>
+</body>
+</html>
