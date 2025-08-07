@@ -1,3 +1,5 @@
+/* assets/script.js */
+
 let tentativas = 6;
 let listaDinamica = [];
 let palavraDica;

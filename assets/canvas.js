@@ -1,3 +1,5 @@
+/* assets/canvas.js */
+
 var tela = document.querySelector("canvas");
 var linha = tela.getContext('2d');
 

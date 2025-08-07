@@ -1,3 +1,5 @@
+/* assets/palavras.js */
+
 const palavras = [
     palavra001 = {
         palavra: "IRLANDA",
